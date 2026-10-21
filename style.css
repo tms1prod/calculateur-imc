@@ -1,0 +1,160 @@
+:root{
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+}
+
+*{
+    font-family: "Cinzel", serif;
+    background-image: ;
+    margin: 0;
+    padding: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5 px rgba(0, 0, 0, 0.2);
+     box-sizing: border-box;
+     border: 3px solid rgba(128, 0, 124, 0.789);
+
+}
+#img{
+    align-items :center;
+   
+    max-width: calc(100% );
+    padding: 25px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000020;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.container-input{
+    margin-bottom: 20px;
+
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline-color: #60183c;
+
+}
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 8px;
+    color: #0c0202;
+    background-color: #7d1f9c88;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    margin-top: 30px;
+}
+button :hover{
+    background-color: rgb(6, 1, 1);
+}
+#resultat{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-line;
+}/*Ajout de l'ecran du resultat*/
+#screen {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f7e9ff;
+    border: 2px solid #7d1f9c;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #00000020;
+    text-align: center;
+}
+
+
+/* Conteneur de l'image et du pointeur */
+.imc-visual {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Image des silhouettes */
+#img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Pointeur mobile */
+.pointeur {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+/* Étiquette affichant l'IMC */
+#valeur-pointeur {
+    background: #7d1f9c;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 9px;
+    border-radius: 8px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px #0003;
+}
+
+/* Pointe dirigée vers la silhouette */
+.fleche {
+    color: #7d1f9c;
+    font-size: 22px;
+    line-height: 1;
+    text-shadow: 0 1px 2px #0002;
+}
+

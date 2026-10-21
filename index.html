@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculateur imc</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+        </style>    
+    </head>
+    <body>
+        <div class="display">
+            <header>
+                <h1>calculateur imc </h1>
+            </header>
+
+            <div class="container">
+                
+                
+                <div class="imc-visual">
+                    <img
+                        src="Indice-de-masse-corporel.jpg"
+                        alt="Silhouettes représentant différentes corpulences"
+                        id="img"
+                    >
+
+                    <div id="pointeur" class="pointeur">
+                        <span id="valeur-pointeur">Votre IMC</span>
+                        <span class="fleche">▼</span>
+                    </div>
+                </div>
+
+
+                <div class=" white-space: pre-line">
+                    <label for="height">height (cm)</label>
+                    <input type="number"name="height" id="height">               
+                </div>
+                
+                <div class="conatainer-weight">
+                    <label for="weight">weight(kg)</label>
+                    <input type="number" name="weight" id="weight">
+                </div> 
+                
+                <div id="resultat"></div>
+            </div>
+            <button id="calculate">calcule imc</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
